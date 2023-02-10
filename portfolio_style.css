@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Great+Vibes&family=Open+Sans&family=Roboto+Condensed&family=Rowdies:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  border-top: 0;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+nav {
+  border-top: 0;
+  border-bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* background-color: white; */
+  padding-top: 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+  top: 0;
+  position: fixed;
+  z-index: 99999;
+}
+
+nav .logo {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+nav .logo p {
+  font-size: 30px;
+  float: left;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Cabin Sketch", cursive;
+  color: rgb(255, 255, 255);
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+nav .logo p:hover {
+  color: rgb(73, 41, 4);
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li a {
+  color: #e2b05b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  /* padding: 0px 20px; */
+  padding: 12px 15px;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+nav ul li a:hover {
+  background-color: black;
+  opacity: 0.3;
+  color: white;
+}
+
+nav ul li .active {
+  background: black;
+  opacity: 0.3;
+  color: white;
+}
+
+#home {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(wall.png);
+}
+.main1 {
+  height: 450px;
+  width: 340px;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-10%, -50%);
+  /* border: #e2b05b;
+  border-style: solid; */
+}
+div.main1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50%;
+  width: 50%;
+  border-top: 3px solid #e2b05b;
+  border-left: 3px solid #e2b05b;
+  /* border-right: 3px solid #e2b05b;
+  border-bottom: 3px solid #e2b05b; */
+}
+.main2 {
+  height: 450px;
+  width: 340px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: #e2b05b;
+  border-style: solid; */
+}
+div.main2:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  /* border-top: 3px solid #e2b05b;
+  border-left: 3px solid #e2b05b; */
+  border-right: 3px solid #e2b05b;
+  border-bottom: 3px solid #e2b05b;
+}
+.main {
+  height: 420px;
+  width: 310px;
+  background: url(my.jpg);
+  background-repeat: no-repeat;
+  background-size: 310px 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: #000;
+  border-style: solid; */
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.inner-content h1 {
+  color: #fff;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 45px;
+  letter-spacing: 3px;
+  font-family: "Playfair Display", serif;
+}
+.inner-content h2 {
+  color: #e2b05b;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 27px;
+  font-family: "Playfair Display", serif;
+}
+
+#follow1 {
+  background-color: #e2b05b;
+}
+#iicon1 {
+  margin-top: 20px;
+  position: absolute;
+  left: 80px;
+  height: 40px;
+  width: 40px;
+  background-image: url(linkedin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#iicon1:hover {
+  opacity: 0.5;
+}
+#iicon2 {
+  margin-top: 20px;
+  position: absolute;
+  left: 180px;
+  height: 40px;
+  width: 40px;
+  background-image: url(github.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#iicon2:hover {
+  opacity: 0.5;
+}
+#iicon3 {
+  margin-top: 20px;
+  position: absolute;
+  left: 280px;
+  height: 40px;
+  width: 40px;
+  background-image: url(twitter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#iicon3:hover {
+  opacity: 0.5;
+}
+#about {
+  width: 100%;
+  height: 80%;
+  background-color: rgb(0, 0, 0);
+}
+#about-content {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  font-size: 25px;
+}
+#about-parent {
+  letter-spacing: 1.3px;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#about-content2 {
+  width: 100%;
+  height: 70%;
+  display: inline-block;
+}
+#box1 {
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+#about-overlay1 {
+  position: absolute;
+  text-align: justify;
+  align-items: center;
+  width: 60%;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  justify-content: start;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: #000;
+  border-left: solid 2px #e2b05b;
+  border-right: solid 2px #e2b05b;
+}
+#box2 {
+  position: relative;
+  width: 100%;
+  height: 30%;
+}
+.btn {
+  font-size: 30px;
+  border: #000 solid 1px;
+  padding: 10px;
+  background-color: #e2b05b;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: #000;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: rgba(104, 97, 77, 0.69);
+}
+#skills {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 1.3px;
+  background-image: linear-gradient(to bottom right, #e2b05b, white, white);
+}
+#skill-content {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  font-size: 25px;
+}
+#skill-parent {
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  color: black;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#skill-content2 {
+  display: flex;
+  width: 100%;
+  height: 70%;
+}
+#r1 {
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+#r2 {
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+#r3 {
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+#r4 {
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+.icon {
+  font-size: 35px;
+  padding-top: 20px;
+}
+#overlay4 {
+  position: absolute;
+  align-items: center;
+  width: 90%;
+  color: black;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: #000;
+  border: solid 1px #000;
+  /* background-color: red; */
+}
+#overlay4 > h1 {
+  margin-top: 30px;
+  font-size: 25px;
+}
+#overlay4 > p {
+  padding: 10px 30px;
+  letter-spacing: 1.5px;
+}
+#overlay4 > #naming {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#contact {
+  background-color: #e2b05b;
+  width: 100%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+  align-items: center;
+  position: relative;
+}
+#overlay5 {
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  color: black;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* background-color: red; */
+}
+input[type="text"] {
+  width: 200px;
+  height: 50px;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+#textarea {
+  width: 402px;
+  height: 200px;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+label {
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+.l1 {
+  font-size: 45px;
+}
+input[type="button"] {
+  width: 85px;
+  height: 35px;
+  border-radius: 2px;
+  border: 2px solid white;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+input[type="button"]:hover {
+  background: rgba(110, 71, 32, 0.647);
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  letter-spacing: 1.2px;
+  text-align: center;
+  background-color: #000;
+  /* border-left: solid 4px white; */
+}
+
+#foo2 {
+  padding-top: 10px;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+}
